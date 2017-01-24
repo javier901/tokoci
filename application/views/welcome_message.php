@@ -51,12 +51,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="caption">
                         <h3 style="min-height:50px;"><?php echo $product->name; ?></h3>
                         <p><?php echo $product->description; ?></p>
+                        <h4 class="text-right"><?php echo $product->price ; ?></h4>
                         <p>
                             <?php echo anchor('welcome/add_to_cart/'. $product->id , 'Buy', [
                                 'class' =>  'btn btn-primary btn-lg btn-block',
                                 'role'  =>  'button'
                             ]) ;?>
                         </p>
+
                     </div>
                 </div>
             </div>

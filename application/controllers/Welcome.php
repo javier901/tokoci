@@ -38,4 +38,10 @@ class Welcome extends CI_Controller {
         $this->load->view('show_cart');
     }
 
+    public function clear_cart()
+    {
+        $this->cart->destroy();
+        redirect(base_url());
+    }
+
 }
