@@ -34,7 +34,8 @@ class Welcome extends CI_Controller {
 
     public function cart()
     {
-        var_dump($this->cart->contents());
+        //print_r($this->cart->contents());
+        $this->load->view('show_cart');
     }
 
 }
