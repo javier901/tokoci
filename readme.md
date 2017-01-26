@@ -3,13 +3,15 @@ hasil belajar php dan codeigniter. (on progress)
 ###################
 
 hasil belajar php dan codeigniter mengenai simple online shop dan shopping cart, serta pembelajaran codeigniter dan konsep MVC.
-fitur : 
+fitur :
+
 1. crud barang
-2. buy - shopping cart - Chekcout
+2. shopping cart ->buy-> chekout
 3. Login system - Multi Level
 4. logging sesion dengan mysql
 5. Invoices
 6. Shopping History dan konfirmasi pembayaran
+
 
 
 *******************
