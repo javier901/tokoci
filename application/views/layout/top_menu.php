@@ -22,6 +22,9 @@
             ?>
           <?php echo anchor('welcome/cart', $text_cart_url)  ?>
         </li>
+          <li>
+              <?php echo anchor('Login', 'Login') ?>
+          </li>
         
       </ul>
     </div><!-- /.navbar-collapse -->

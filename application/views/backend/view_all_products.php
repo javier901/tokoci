@@ -17,6 +17,8 @@
 
     </head>
     <body>
+    <?php $this->load->view('backend/admin_menu.php') ; ?>
+
         <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-10">

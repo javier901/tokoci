@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Created by PhpStorm.
  * User: hasyim
@@ -12,9 +11,15 @@ class Products extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+
+       /* if ($this->session->userdata('group') != '1')
+        {
+            $this->session->set_flashdata('error','Sorry you not logged in');
+            redirect('login');
+        }*/
+
         //load model -> model_products
         $this->load->model('Model_products');
-        //$this->load->library('upload');
     }
 
 
