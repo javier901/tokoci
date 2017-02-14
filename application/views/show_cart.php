@@ -74,7 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div align="center">
         <?php echo anchor('welcome/clear_cart', 'Clear Cart', ['class' => 'btn btn-danger']); ?>
         <?php echo anchor(base_url(), 'Continue Shopping', ['class' => 'btn btn-primary']) ?>
-        <?php echo anchor('#', 'Chek Out', ['class' => 'btn btn-success']) ?>
+        <?php echo anchor('order', 'Chek Out', ['class' => 'btn btn-success']) ?>
     </div>
 </div>
 </body>

@@ -12,11 +12,11 @@ class Products extends CI_Controller
     {
         parent::__construct();
 
-       /* if ($this->session->userdata('group') != '1')
+        if ($this->session->userdata('groups') != '1')
         {
-            $this->session->set_flashdata('error','Sorry you not logged in');
+            $this->session->set_flashdata('error','Sorry, you are not logged in');
             redirect('login');
-        }*/
+        }
 
         //load model -> model_products
         $this->load->model('Model_products');
