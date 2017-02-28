@@ -15,6 +15,13 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
     <?php if ($this->session->userdata('username')) : ?>
+
+      <ul class="nav navbar-nav navbar-left">
+      <li><?php echo anchor('admin/products', 'Products') ?></li>
+      <li><?php echo anchor('admin/invoices', 'Invoices') ?></li>
+        
+      </ul>
+
       <ul class="nav navbar-nav navbar-right">
           <li><?php echo anchor(base_url(), 'Home') ?></li>
           <li>

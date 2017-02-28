@@ -32,10 +32,23 @@ class Welcome extends CI_Controller {
         redirect(base_url());
     }
 
+
     public function cart()
     {
         //print_r($this->cart->contents());
         $this->load->view('show_cart');
+    }
+
+    public function remove_item_from_cart($rowid)
+    {
+        $data = array(
+                        'rowid' => $rowid,
+                        'qty'   => 0
+
+        );
+
+        $this->cart->update($data);
+        redirect('Welcome/cart');
     }
 
     public function clear_cart()

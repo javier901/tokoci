@@ -47,6 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <th>Qty</th>
                 <th>Price</th>
                 <th>Sub Total</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -61,6 +62,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <td><?php echo $items['qty'] ?></td>
                 <td align="right"><?php echo number_format($items['price'],0,',','.')  ?></td>
                 <td align="right"><?php echo number_format($items['subtotal'],0,',','.') ?></td>
+                <td><?php echo anchor('welcome/remove_item_from_cart/'. $items['rowid'], 'Hapus', ['class' => 'btn btn-danger']) ; ?></td>
             </tr>
         <?php endforeach ?>
         </tbody>
